@@ -1,3 +1,3 @@
 class Employee < ApplicationRecord
-    validates :name, :email, :manager, presence: true
+    validates :name, :email, presence: true
 end

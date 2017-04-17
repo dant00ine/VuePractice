@@ -30,7 +30,6 @@ var employees = new Vue({
       }
   },
   mounted: function() {
-      console.log("ready fired");
     $.ajax({
       url: '/employees.json',
       success: (res) => {
@@ -39,10 +38,3 @@ var employees = new Vue({
     });
   }
 });
-
-Vue.component('employee-row', {
-    template: '#employee-row',
-    props: {
-        employee: Object
-    }
-})
